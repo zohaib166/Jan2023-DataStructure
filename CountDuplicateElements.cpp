@@ -1,13 +1,9 @@
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
     int arr[] = {3,6,7,7,8,9,9,9,10};
-    
     int size = sizeof(arr)/sizeof(int);
-    
     int count;
     int i=0,j=1;
     while(j<size) {
@@ -21,7 +17,6 @@ int main()
             cout << arr[i] << ":" << count << endl;
         i = j-1;
         i++;
-        
     }
     return 0;
 }
