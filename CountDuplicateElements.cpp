@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int arr[] = {3,6,7,7,8,9,9,9,10};
+    int arr[] = {-2 ,-2 ,-1 ,0, 0, 1 ,1, 2, 3, 4};
     int size = sizeof(arr)/sizeof(int);
     int count;
     int i=0,j=1;
