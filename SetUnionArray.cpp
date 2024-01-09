@@ -29,4 +29,16 @@ int main()
         }
     }
 
+    for(;i<n1;i++) {
+        arr3[k++] = arr1[i];
+    }
+    for(;j<n2;j++) {
+        arr3[k++] = arr2[j];
+    }
+    
+    for(int i=0;i<k;i++) {
+        cout <<arr3[i] << " ";
+    }
+    cout << endl;
+
 }
