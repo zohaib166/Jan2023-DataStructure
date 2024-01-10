@@ -1,5 +1,6 @@
+#include <iostream>
+using namespace std;
 #include "ImplementStack.cpp"
-
 int getPrecedence(char op)
 {
 	switch (op) {
