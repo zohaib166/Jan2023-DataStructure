@@ -7,9 +7,9 @@ template <typename T>
 class mystack {
 public:
     T *stk;
-    T size;
-    T t;
-    mystack(T n): size(n) {
+    int size;
+    int t;
+    mystack(int n): size(n) {
         stk = new T[size];
         t = -1;
     }
@@ -21,7 +21,7 @@ public:
         t++;
         stk[t] = ele;
     }
-    int pop() {
+    T pop() {
         if(t==-1) {
             cout << "stack is empty\n";
             return -1;
@@ -29,7 +29,7 @@ public:
         return stk[t--];
     }
 
-    int top() {
+    T top() {
         return stk[t];
     }
 
@@ -39,10 +39,8 @@ public:
     }
 };
 
-#endif
-
 /* int main() {
-    mystack s{5};
+    mystack<int> s{5};
     s.push(10);
     s.push(20);
     s.push(30);
@@ -51,3 +49,4 @@ public:
     cout << s.pop() << endl;
     cout << s.pop() << endl;
 } */
+#endif
